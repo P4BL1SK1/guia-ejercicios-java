@@ -1,7 +1,6 @@
 package Ejercicios;
+
 import java.util.Scanner;
-
-
 public class Ejercicio3 {
 
     public static void printAsteriscos (int cant) {
@@ -24,15 +23,24 @@ public class Ejercicio3 {
         float min = array[0];
         float max = array[0];
         for( int i = 0; i <= array.length -1; i ++) {
-            if(array < min) {
+            if (array[i] < min) {
                 min = array[i];
-            }
-            else if (array[i] > max) {
+            } else if (array[i] > max) {
                 max = array[i];
             }
+        }
+        for (int i = 0; i <= array.length -1; i ++) {
             System.out.print(i + "  ");
             printAsteriscos((int)array[i]);
-            System.out.println("  " + array[i]);
+            if(array[i] == min) {
+                System.out.println("  " + array[i] + "  -------> min");
+            }
+            else if (array[i] == max) {
+                System.out.println("  " + array[i] + "  -------> max");
+            }
+            else {
+                System.out.println("  " + array[i]);
+            }
         }
     }
 

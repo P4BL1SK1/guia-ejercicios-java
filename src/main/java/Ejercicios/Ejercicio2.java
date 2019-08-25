@@ -1,6 +1,6 @@
 package Ejercicios;
-import java.util.Scanner;
 
+import java.util.Scanner;
 public class Ejercicio2 {
     public static int[] returnMayores(int num, int[] array) {
         int[] temp = new int[array.length];
@@ -12,7 +12,11 @@ public class Ejercicio2 {
               j++;
             }
         }
-        return temp;
+        int[] aux = new int[j];
+        for(int x = 0; x <= aux.length -1; x++) {
+            aux[x] = temp[x];
+        }
+        return aux;
     }
 
     public static void main(String[] args) {
