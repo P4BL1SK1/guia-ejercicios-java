@@ -1,4 +1,4 @@
-package Ejercicios;
+package Ejercicio1;
 
 public class Ejercicio1 {
     public static int[] invertirArray(int[] array){
