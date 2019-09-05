@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
-
+import Ejercicio3.Ticket;
 
 public class Ticket {
 
@@ -33,9 +33,5 @@ public class Ticket {
         return items.stream()
                 .filter(i -> i.getNombre().contains(producto))
                 .collect(Collectors.toList());
-    }
-
-    public float total() {
-    //return items.stream().mapToInt().reduce(item -> item.getLinea();
     }
 }

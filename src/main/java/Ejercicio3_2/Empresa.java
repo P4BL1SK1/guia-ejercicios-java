@@ -17,4 +17,8 @@ public class Empresa {
     public void setEmpleados(List<Empleado> empleados) {
         this.empleados = empleados;
     }
+
+    public void list() {
+        System.out.println(this.nombre);
+    }
 }

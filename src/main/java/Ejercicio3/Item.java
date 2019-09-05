@@ -25,7 +25,7 @@ public class Item {
     }
 
     public float getLinea() {
-        return precioUnitario*cantidad;
+        return precioUnitario * cantidad;
     }
 
     @Override
